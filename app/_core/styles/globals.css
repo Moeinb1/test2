@@ -1,0 +1,18 @@
+@import './tailwind/base.css';
+@import './tailwind/components.css';
+@import './tailwind/utilities.css';
+
+@font-face {
+    font-family: iransans;
+    src: url('/fonts/iransans/IRANSansWeb.woff2');
+    font-display: block;
+}
+
+html {
+    direction: rtl;
+}
+
+* {
+
+    font-family: iransans;
+}

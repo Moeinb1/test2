@@ -1,0 +1,52 @@
+@tailwind components;
+
+@layer components {
+    .pm-form-input-label {
+        @apply flex items-center text-gray-400 mb-2;
+    }
+
+    .pm-form-input-box {
+        @apply w-full h-12 flex px-4 items-center border border-gray-300;
+    }
+
+    .pm-form-input-error {
+        @apply text-[0.85rem] min-h-[1.2rem] mt-1 text-red;
+    }
+}
+
+@layer components {
+    .md-box-shadow {
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar-menu-item {
+        @apply flex items-center justify-between w-full p-4 hover:bg-primary-200;
+    }
+
+    .sidebar-menu-item-selected {
+        @apply bg-primary-500 text-white hover:text-black;
+    }
+}
+
+@layer components {
+    .loader {
+        width: 2rem;
+        height: 2rem;
+        border: 5px solid #fff;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
